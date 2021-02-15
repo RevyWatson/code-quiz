@@ -1,0 +1,60 @@
+:root {
+    --borders: rgb(182, 61, 39);
+    --shadows: rgb(22, 33, 92);
+    --bodytext: rgb(39, 52, 131);
+}
+
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("js_01.jfif");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: 8%;
+}
+
+h1 {
+    color:rgb(238, 166, 32);
+    font-size: 40px;
+
+    margin-bottom: 3%;
+    text-align: center;
+    color:;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h2 {
+    color: rgb(55, 206, 55);
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.game-card {
+    text-align: center;
+    background-color: rgb(6, 6, 14);
+    color:var(--bodytext);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 80px;
+    border: var(--borders) dashed 4px;
+    border-radius: 20px;
+    box-shadow: 30px 20px 20px var(--shadows);
+}
+
+button {
+    background-color:rgb(6, 6, 14);
+    border:var(--borders) solid 4px;
+    color:var(--bodytext);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 6%;
+}
