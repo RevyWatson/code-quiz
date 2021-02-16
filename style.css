@@ -1,60 +1,69 @@
 :root {
-    --borders: rgb(182, 61, 39);
-    --shadows: rgb(22, 33, 92);
-    --bodytext: rgb(39, 52, 131);
+    --borders: rgb(39, 118, 182); /*color of borders*/
+    --shadows: rgb(246, 248, 135); /*color of "Instructions:"*/
+    --bodytext: rgb(120, 129, 184); /*color of paragraph text*/
 }
 
 * {
-    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-image: url("js_01.jfif");
+    margin-top: 8%;
+    background-image: url("js_02.jfif"); /*image of colorful js code from free-use image library*/
     background-repeat: no-repeat;
     background-size: auto;
-    margin-top: 8%;
 }
 
 h1 {
-    color:rgb(238, 166, 32);
-    font-size: 40px;
-
-    margin-bottom: 3%;
+    color:rgb(228, 15, 122);
+    font-size: 45px;
+    margin-top: 8%;
     text-align: center;
-    color:;
     border-radius: 20px 20px 0px 0px;
 }
 
-h2 {
-    color: rgb(55, 206, 55);
-    margin-bottom: 20px;
+/*The "Instructions:" portion of the paragraph*/
+span {
+    font-size: 25px;
+    color: blanchedalmond;
     text-decoration: underline;
 }
 
+/*Instructions for the quiz*/
 p {
+    text-align: left;
+    line-height: 1.5;
     font-size: 18px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 13%;
+    margin-right: 10%;
+    margin-top: 6%;
 }
 
+/*container for the start, questions, and end game*/
 .game-card {
+    display: block;
+    margin: auto;
+    height: 450px;
+    width: 60%;
     text-align: center;
     background-color: rgb(6, 6, 14);
     color:var(--bodytext);
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 80px;
-    border: var(--borders) dashed 4px;
-    border-radius: 20px;
-    box-shadow: 30px 20px 20px var(--shadows);
+    border: var(--borders) ridge 6px;
+    border-radius: 180px;
 }
 
 button {
     background-color:rgb(6, 6, 14);
-    border:var(--borders) solid 4px;
+    border:var(--borders) ridge 4px;
     color:var(--bodytext);
     border-radius: 20px;
     padding: 10px;
-    margin-top: 6%;
+    margin-top: 3%;
+}
+
+/*hover offects for begin game button*/
+.shinyBtn:hover {
+    color: rgb(228, 15, 122);
+    cursor: grab;
 }
