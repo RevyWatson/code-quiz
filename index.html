@@ -8,23 +8,16 @@
 </head>
 
 <body>
-    <section class="game-card">
-    <h1>Code Quiz</h1>
-        <h2>Instructions:</h2>
-        <p>
-            Click the button below to begin the quiz. 
-        </p>
-        <p>
-            Answer as many questions as you can before the timer
-            counts down to zero.
-        </p> 
-        <p>
-            For every correct answer you earn extra time! For every incorrect answer you lose time!
-        </p>
-        <p> 
-            Good luck!
-        </p>
-        <button>Click Here to Begin Game</button>
+    <section class="game-card"> <!--container for the start, questions, and end game-->
+        <h1>Code Quiz</h1>
+        <div class="quizContainer">
+            <p>
+                <span>Instructions:</span> Click the button below to begin the quiz. Answer as many questions as you can
+                before the timer counts down to zero. For every correct answer you earn extra time! For every incorrect answer you lose time!
+                Good luck!
+            </p>
+            <button id= "beginQuiz" class="shinyBtn">Click Here to Begin Game</button> <!---->
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
