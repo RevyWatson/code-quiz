@@ -40,7 +40,7 @@ p {
     margin-top: 6%;
 }
 
-/*container for the start, questions, and end game*/
+/*container for the start quiz, questions, and end score*/
 .game-card {
     display: block;
     margin: auto;
@@ -53,6 +53,7 @@ p {
     border-radius: 180px;
 }
 
+/*begin quiz button*/
 button {
     background-color:rgb(6, 6, 14);
     border:var(--borders) ridge 4px;
@@ -62,7 +63,7 @@ button {
     margin-top: 3%;
 }
 
-/*hover offects for begin game button*/
+/*hover offects for begin quiz button*/
 .shinyBtn:hover {
     color: rgb(228, 15, 122);
     cursor: grab;
