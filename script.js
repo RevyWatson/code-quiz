@@ -331,7 +331,8 @@ function endQuiz() {
     btN3_6.hidden = " ";
     listEl.textContent = " ";
     feedBack.textContent = " ";
-// high scores and form box for initials
-// imput element, submit btn, and access to local storage
+}
 
+function scoreBoard () {
+    
 }
