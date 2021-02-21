@@ -27,7 +27,11 @@ let btN3_5 = document.createElement("button");
 let btN1_6 = document.createElement("button");
 let btN2_6 = document.createElement("button");
 let btN3_6 = document.createElement("button");
-
+//end quiz buttons
+let sumbitInitials = document.createElement("button");
+let highScore = document.createElement("button");
+let textBox = document.createElement("input");
+let initialEl = document.createElement("h3");
 //variable for the score and time elements
 let scoreTag = document.createElement("h2");
 let timeTag = document.createElement("h2");
@@ -96,7 +100,6 @@ function finalCountDown() {
         timeTag.textContent = "Time: " + secondsLeft;
         
         if (secondsLeft <= 0) {
-            // console.log(finalCountDown);
             secondsLeft = 0;
             clearInterval(timerInterval);
             endQuiz();
@@ -324,6 +327,7 @@ function sixthQuestion() {
     })
 }
 
+//end of the quiz
 function endQuiz() {
     h1Tag.textContent = "Quiz Complete! Type Your Initials and Save Your Score!";
     btN1_6.hidden = " ";
@@ -331,8 +335,50 @@ function endQuiz() {
     btN3_6.hidden = " ";
     listEl.textContent = " ";
     feedBack.textContent = " ";
+    timeTag.hidden = " ";
+    
+   
+    sectionTag.appendChild(initialEl);
+    initialEl.classList.add("initials");
+    
+    initialEl.appendChild(textBox);
+    textBox.setAttribute("style", "font-family:monospace; font-size:20px; background-color: rgb(24, 24, 58); color:rgb(228, 15, 122); padding:10px; border: rgb(39, 118, 182) ridge 4px; border-radius:20px; width: 80px;")
+    
+    sectionTag.appendChild(highScore);
+    highScore.setAttribute("class", "shinyBtn");
+    highScore.textContent = "High Scores";
+    
+   
+    initialEl.appendChild(sumbitInitials);
+    sumbitInitials.setAttribute("class", "shinyBtn");
+    sumbitInitials.textContent = "Submit";
+
+    scoreTag.setAttribute("style", "font-family:monospace; color:rgb(214, 176, 119); margin-top:10%; font");
+
+    // let grabInitials = document.getElementById("input")
+    // sumbitInitials.addEventListener("click", scoreBoard(event)) {
+    //     event.preventDefault();
+    // localStorage.setItem("grabInitials", JSON.stringify(grabInitials));
+    // renderInitials();
+    // }
 }
 
+//eventlistener for high score button
+highScore.addEventListener("click", scoreBoard);
+
+//function for configuring local storage and posting initials - unfinished and commented out
 function scoreBoard () {
-    
-}
+    h1Tag.textContent = "Quiz High Scores"
+    textBox.hidden = " ";
+    highScore.hidden = " ";
+    sumbitInitials.hidden = " ";
+    scoreTag.hidden = " ";
+    timeTag.hidden = " ";
+
+    // function renderInitials() {
+    //     let finalSubmit = JSON.parse(localStorage.getItem("grabInitials"));
+    //     }
+    }
+
+    //The code on lines 357-362 and 375-377 is unfinished.
+    //I couldn't figure out how to make local storage work.
