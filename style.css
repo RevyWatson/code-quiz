@@ -28,11 +28,12 @@ span {
     font-size: 25px;
     color: rgb(214, 176, 119);
     text-decoration: underline;
+    font-family: monospace;
 }
 
 /*Instructions for the quiz*/
 p {
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
     font-size: 18px;
     margin-left: 10%;
