@@ -13,7 +13,7 @@ Coding quiz application designed to test users knowledge of basic JavaScript. Th
 ![Screenshot (57)](https://user-images.githubusercontent.com/76264693/111368092-cdf5e900-866b-11eb-8a52-bdf244dbfc6c.png)
 
 ## Future Developement
-I recogize that there is a much simpler and far more elegant way of coding this application. In the future I'd like to rebuild this project with those concepts in mind. Currently the local storage isn't functional and the user cannot log their initials to the highschool section. Those missing elements are definitely things that I'd like to correct and implement in the future version of this application.
+I recogize that there is a much simpler and far more elegant way of coding this application. In the future I'd like to rebuild this project with those concepts in mind. Currently the local storage isn't functional and the user cannot log their initials to the high score section. Those missing elements are definitely things that I'd like to correct and implement in the future version of this application.
 
 Code Quiz
 https://revywatson.github.io/code-quiz/
